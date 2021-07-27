@@ -1,0 +1,243 @@
+assig5 > java Airline a5data1.txt
+Welcome to Limited Airlines, Limited
+Please choose from the options below:
+1) List cities served and direct routes
+2) Find a route
+3) Quit program
+1
+Cities Served: 
+	Pittsburgh
+	Erie
+	Altoona
+	Johnstown
+	Harrisburg
+	Philadelphia
+	Scranton
+	Reading
+	Allentown
+
+Direct Routes:
+From             To               Cost      Distance  
+----             --               ----      --------  
+Pittsburgh       Erie             200.00    127.0     
+Pittsburgh       Johnstown        125.00    66.0      
+Pittsburgh       Harrisburg       125.00    205.0     
+Pittsburgh       Philadelphia     550.00    306.0     
+Erie             Pittsburgh       200.00    127.0     
+Altoona          Johnstown        150.00    43.0      
+Altoona          Harrisburg       225.00    134.0     
+Johnstown        Pittsburgh       125.00    66.0      
+Johnstown        Altoona          150.00    43.0      
+Harrisburg       Pittsburgh       125.00    205.0     
+Harrisburg       Altoona          225.00    134.0     
+Harrisburg       Philadelphia     175.00    105.0     
+Harrisburg       Reading          200.00    59.0      
+Philadelphia     Pittsburgh       550.00    306.0     
+Philadelphia     Harrisburg       175.00    105.0     
+Philadelphia     Scranton         275.00    125.0     
+Philadelphia     Allentown        150.00    62.0      
+Scranton         Philadelphia     275.00    125.0     
+Reading          Harrisburg       200.00    59.0      
+Reading          Allentown        175.00    35.0      
+Allentown        Philadelphia     150.00    62.0      
+Allentown        Reading          175.00    35.0      
+
+Please choose from the options below:
+1) List cities served and direct routes
+2) Find a route
+3) Quit program
+2
+Starting City: Pittsburgh
+Destination City: Texarcana
+Sorry but your city is not found.  Check your spelling.
+Cities Served: 
+	Pittsburgh
+	Erie
+	Altoona
+	Johnstown
+	Harrisburg
+	Philadelphia
+	Scranton
+	Reading
+	Allentown
+
+Destination City: Philadelfia
+Sorry but your city is not found.  Check your spelling.
+Cities Served: 
+	Pittsburgh
+	Erie
+	Altoona
+	Johnstown
+	Harrisburg
+	Philadelphia
+	Scranton
+	Reading
+	Allentown
+
+Destination City: Philadelphia
+Maximum cost? (> 0) 0
+Maximum cost? (> 0) -10
+Maximum cost? (> 0) 750
+Maximum hops? (> 0) 4
+There are 4 paths from Pittsburgh to Philadelphia with maximum cost 750.0 and at most 4 hops
+
+How would you like to view these paths?
+1) Ordered by hops (fewest to most)
+2) Ordered by cost (least expensive to most expensive)
+3) Ordered by distance (shortest overall to longest overall)
+or any other number to go back to the main menu
+Choice: 1
+Paths from Pittsburgh to Philadelphia sorted by hops (fewest to most):
+Hops: 1 Cost: 550.00 Distance: 306.0 Edges:
+	[(Pittsburgh,Philadelphia) c:550.00 d:306.0] 
+Hops: 2 Cost: 300.00 Distance: 310.0 Edges:
+	[(Pittsburgh,Harrisburg) c:125.00 d:205.0] [(Harrisburg,Philadelphia) c:175.00 d:105.0] 
+Hops: 4 Cost: 675.00 Distance: 348.0 Edges:
+	[(Pittsburgh,Johnstown) c:125.00 d:66.0] [(Johnstown,Altoona) c:150.00 d:43.0] [(Altoona,Harrisburg) c:225.00 d:134.0] 
+	[(Harrisburg,Philadelphia) c:175.00 d:105.0] 
+Hops: 4 Cost: 650.00 Distance: 361.0 Edges:
+	[(Pittsburgh,Harrisburg) c:125.00 d:205.0] [(Harrisburg,Reading) c:200.00 d:59.0] [(Reading,Allentown) c:175.00 d:35.0] 
+	[(Allentown,Philadelphia) c:150.00 d:62.0] 
+
+How would you like to view these paths?
+1) Ordered by hops (fewest to most)
+2) Ordered by cost (least expensive to most expensive)
+3) Ordered by distance (shortest overall to longest overall)
+or any other number to go back to the main menu
+Choice: 2
+Paths from Pittsburgh to Philadelphia sorted by cost (cheapest to most expensive):
+Hops: 2 Cost: 300.00 Distance: 310.0 Edges:
+	[(Pittsburgh,Harrisburg) c:125.00 d:205.0] [(Harrisburg,Philadelphia) c:175.00 d:105.0] 
+Hops: 1 Cost: 550.00 Distance: 306.0 Edges:
+	[(Pittsburgh,Philadelphia) c:550.00 d:306.0] 
+Hops: 4 Cost: 650.00 Distance: 361.0 Edges:
+	[(Pittsburgh,Harrisburg) c:125.00 d:205.0] [(Harrisburg,Reading) c:200.00 d:59.0] [(Reading,Allentown) c:175.00 d:35.0] 
+	[(Allentown,Philadelphia) c:150.00 d:62.0] 
+Hops: 4 Cost: 675.00 Distance: 348.0 Edges:
+	[(Pittsburgh,Johnstown) c:125.00 d:66.0] [(Johnstown,Altoona) c:150.00 d:43.0] [(Altoona,Harrisburg) c:225.00 d:134.0] 
+	[(Harrisburg,Philadelphia) c:175.00 d:105.0] 
+
+How would you like to view these paths?
+1) Ordered by hops (fewest to most)
+2) Ordered by cost (least expensive to most expensive)
+3) Ordered by distance (shortest overall to longest overall)
+or any other number to go back to the main menu
+Choice: 3
+Paths from Pittsburgh to Philadelphia sorted by distance (shortest to longest):
+Hops: 1 Cost: 550.00 Distance: 306.0 Edges:
+	[(Pittsburgh,Philadelphia) c:550.00 d:306.0] 
+Hops: 2 Cost: 300.00 Distance: 310.0 Edges:
+	[(Pittsburgh,Harrisburg) c:125.00 d:205.0] [(Harrisburg,Philadelphia) c:175.00 d:105.0] 
+Hops: 4 Cost: 675.00 Distance: 348.0 Edges:
+	[(Pittsburgh,Johnstown) c:125.00 d:66.0] [(Johnstown,Altoona) c:150.00 d:43.0] [(Altoona,Harrisburg) c:225.00 d:134.0] 
+	[(Harrisburg,Philadelphia) c:175.00 d:105.0] 
+Hops: 4 Cost: 650.00 Distance: 361.0 Edges:
+	[(Pittsburgh,Harrisburg) c:125.00 d:205.0] [(Harrisburg,Reading) c:200.00 d:59.0] [(Reading,Allentown) c:175.00 d:35.0] 
+	[(Allentown,Philadelphia) c:150.00 d:62.0] 
+
+How would you like to view these paths?
+1) Ordered by hops (fewest to most)
+2) Ordered by cost (least expensive to most expensive)
+3) Ordered by distance (shortest overall to longest overall)
+or any other number to go back to the main menu
+Choice: 4
+
+Please choose from the options below:
+1) List cities served and direct routes
+2) Find a route
+3) Quit program
+1
+Cities Served: 
+	Pittsburgh
+	Erie
+	Altoona
+	Johnstown
+	Harrisburg
+	Philadelphia
+	Scranton
+	Reading
+	Allentown
+
+Direct Routes:
+From             To               Cost      Distance  
+----             --               ----      --------  
+Pittsburgh       Erie             200.00    127.0     
+Pittsburgh       Johnstown        125.00    66.0      
+Pittsburgh       Harrisburg       125.00    205.0     
+Pittsburgh       Philadelphia     550.00    306.0     
+Erie             Pittsburgh       200.00    127.0     
+Altoona          Johnstown        150.00    43.0      
+Altoona          Harrisburg       225.00    134.0     
+Johnstown        Pittsburgh       125.00    66.0      
+Johnstown        Altoona          150.00    43.0      
+Harrisburg       Pittsburgh       125.00    205.0     
+Harrisburg       Altoona          225.00    134.0     
+Harrisburg       Philadelphia     175.00    105.0     
+Harrisburg       Reading          200.00    59.0      
+Philadelphia     Pittsburgh       550.00    306.0     
+Philadelphia     Harrisburg       175.00    105.0     
+Philadelphia     Scranton         275.00    125.0     
+Philadelphia     Allentown        150.00    62.0      
+Scranton         Philadelphia     275.00    125.0     
+Reading          Harrisburg       200.00    59.0      
+Reading          Allentown        175.00    35.0      
+Allentown        Philadelphia     150.00    62.0      
+Allentown        Reading          175.00    35.0      
+
+Please choose from the options below:
+1) List cities served and direct routes
+2) Find a route
+3) Quit program
+2
+Starting City: Scranton
+Destination City: Erie
+Maximum cost? (> 0) 400
+Maximum hops? (> 0) 2
+Sorry but there are no paths from Scranton to Erie that meet your criteria
+
+Please choose from the options below:
+1) List cities served and direct routes
+2) Find a route
+3) Quit program
+2
+Starting City: Scranton
+Destination City: Erie
+Maximum cost? (> 0) 750
+Maximum hops? (> 0) 3
+Sorry but there are no paths from Scranton to Erie that meet your criteria
+
+Please choose from the options below:
+1) List cities served and direct routes
+2) Find a route
+3) Quit program
+2
+Starting City: Scranton
+Destination City: Erie
+Maximum cost? (> 0) 1000
+Maximum hops? (> 0) 4
+There are 1 paths from Scranton to Erie with maximum cost 1000.0 and at most 4 hops
+
+How would you like to view these paths?
+1) Ordered by hops (fewest to most)
+2) Ordered by cost (least expensive to most expensive)
+3) Ordered by distance (shortest overall to longest overall)
+or any other number to go back to the main menu
+Choice: 1
+Paths from Scranton to Erie sorted by hops (fewest to most):
+Hops: 4 Cost: 775.00 Distance: 562.0 Edges:
+	[(Scranton,Philadelphia) c:275.00 d:125.0] [(Philadelphia,Harrisburg) c:175.00 d:105.0] [(Harrisburg,Pittsburgh) c:125.00 d:205.0] 
+	[(Pittsburgh,Erie) c:200.00 d:127.0] 
+
+How would you like to view these paths?
+1) Ordered by hops (fewest to most)
+2) Ordered by cost (least expensive to most expensive)
+3) Ordered by distance (shortest overall to longest overall)
+or any other number to go back to the main menu
+Choice: 4
+
+Please choose from the options below:
+1) List cities served and direct routes
+2) Find a route
+3) Quit program
+3
+assig5 > 
